@@ -1,0 +1,14 @@
+{
+    "name": "aguru/navolne.pro",
+    "type": "project",
+    "require": {
+        "retailcrm/api-client-php": "^4.0"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Andrey Inishev",
+            "email": "inish777@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+version: '2'
+services:
+  navolne:
+    build: .
+    ports:
+      - "3003:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    extra_hosts:
+      - "navolne.local:127.0.0.1"
+    environment:
+      - DOCKER=yes
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=rlglV09K|
+    volumes:
+      - /opt/chehol:/var/lib/mysql
